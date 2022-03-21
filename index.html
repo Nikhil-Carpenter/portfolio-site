@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio_website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="body">
+    <!-- header section starts -->
+
+    <header class="header" id="header">
+      <div class="container header_container">
+        <div class="logo">
+          <p><span id="logo_part">N.C.</span></p>
+        </div>
+        <nav class="nav" id="nav">
+          <ul class="navlist">
+            <li class="list_items"><a href="#home">Home</a></li>
+            <li class="list_items"><a href="#about">About</a></li>
+            <li class="list_items"><a href="#skill">Skills</a></li>
+            <li class="list_items"><a href="#">Services</a></li>
+            <li class="list_items"><a href="#work">Work</a></li>
+            <li class="list_items"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Home section starts -->
+
+    <section class="home_section" id="home">
+      <div class="container home_container  ">
+
+          <div class="left">
+
+                <p>hello,My name is </p>
+                <h1>Nikhil Carpenter</h1>
+                <p>And I'm a <span class="auto-input"></span></p>
+                <a href="./media/banner.jpg" download >Download C.V.</a>
+                
+            <div class="theme" id="toggle-btn" onclick="changeTheme()"></div>
+              
+          </div>
+
+          <div class="social_icons">
+            <a href="" ><i class="fa-brands fa-instagram"></i></a > 
+            <a href="https://www.linkedin.com/in/nikhil-carpenter-8a18451b1/" ><i class="fa-brands fa-linkedin"></i></a >
+            <a href="https://github.com/Nikhil-Carpenter" ><i class="fa-brands fa-github"></i></a >
+           </div>
+
+      </div>
+
+    </section>
+
+    <!-- About section starts -->
+
+    <section class="about_section" id="about">
+      <h1 class="section_heading">About Me</h1>
+      <div class="about_content">
+        <div class="left">
+          <img src="./media/imgs/profile-1.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h2>I'm Nikhil and I'm a <span class="auto-input">Web Developer</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae exercitationem mollitia voluptas nisi illo officia recusandae animi deserunt aliquam! Nulla quo quidem laudantium maiores laborum, nam, porro iusto obcaecati harum tempora commodi, dolorum voluptatem voluptatum ex modi architecto sit veniam itaque? Optio magni vitae corrupti autem, placeat fugit facere.
+
+          </p>
+          <a>Contact Me</a>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <!-- skills section -->
+
+
+    <section class="skill_section" id="skill">
+
+      <h1 class="section_heading">My Skills</h1>
+
+      <div class="skill_content">
+
+          <div class="column col_left">
+            
+            <h2 class="skill_content_heading">My Skills and Experiences</h2>
+            <p class="skill_content_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate modi consequatur rem! Atque consequatur est blanditiis perferendis totam! Maiores beatae voluptas, officiis soluta ab vero, facere minima modi, molestiae eligendi harum aliquam corrupti. Rem reprehenderit repudiandae sunt id beatae.
+
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+
+          <div class="column col_right">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                  <span>90%</span>
+                </div>
+                <div class="line html"></div>
+              </div>
+
+              <div class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                  <span>80%</span>
+                </div>
+                <div class="line css"></div>
+              </div>
+
+              <div class="bar">
+                <div class="info">
+                  <span>JavaScript</span>
+                  <span>70%</span>
+                </div>
+                <div class="line javaScript"></div>
+              </div>
+
+              <div class="bar">
+                <div class="info">
+                  <span>REACT</span>
+                  <span>50%</span>
+                </div>
+                <div class="line react"></div>
+              </div>
+
+              <div class="bar">
+                <div class="info">
+                  <span>NODE JS</span>
+                  <span>60%</span>
+                </div>
+                <div class="line node"></div>
+              </div>
+
+          </div>
+
+      </div>
+
+
+    </section>
+    <hr>
+
+    <!-- Work section starts -->
+    <section class="work_section" id="work">
+
+        <h2 class="section_heading">My Work</h2>
+
+        <div class="work_content">
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMLfXZRjpLtcBIwF71zsBG6WZNSZjDOVu7KQ&usqp=CAU" alt="">
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Filter System</h3>
+              <p class="work_desc">this is filter system with CRUD operations</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/Indiana-website/">See project</a>
+            </div>
+          </div>
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://raw.githubusercontent.com/Nikhil-Carpenter/Indiana-website/master/media/img/banner1.jpg" alt="">
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Travel Website</h3>
+              <p class="work_desc">this is filter system with CRUD operations</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/Indiana-website/">See project</a>
+            </div>
+          </div>
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://github.com/Nikhil-Carpenter/hungries-website/blob/master/images/banner7.jpg?raw=true" alt="">
+
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Food Website</h3>
+              <p class="work_desc">this is filter system with CRUD operations</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/Food-website/">See project</a>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+    <hr>
+    <!-- contact section starts -->
+    <section class="contact_section" id="contact">
+
+      <h2 class="section_heading">Contact Me</h2>
+
+        <div class="contact_content">
+            <div class="row">
+
+                <div class="contact_card">
+                  <div class="contact_icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="contact_info">
+                    <h3>Address</h3>
+                    <span>Indore,(M.P.)</span>
+                  </div>
+                </div>
+
+                <div class="contact_card">
+                  <div class="contact_icons">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="contact_info">
+                    <h3>Phone</h3>
+                    <span>+91 7974082519</span>
+                  </div>
+                </div>
+
+                <div class="contact_card">
+                  <div class="contact_icons">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact_info">
+                    <h3>E-mail Address</h3>
+                    <span>Nikhilcrpntr222@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="contact_card">
+                  <div class="contact_icons">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="contact_info">
+                    <h3>Website</h3>
+                    <span>Nikhil.com</span>
+                  </div>
+                </div>
+
+
+            </div>
+
+            <div class="row row_form">
+              <div class="contact_form">
+                <h3>Send Message</h3>
+                <div class="input_box">
+                  <input type="text" placeholder="Your Name">
+                </div>
+                <div class="input_box">
+                  <input type="email" placeholder="Your email">
+                </div>
+                <div class="input_box">
+                 <textarea  id="" cols="30" rows="5" placeholder="message"></textarea>
+                </div>
+                <div class="input_box">
+                  <input type="submit" value="Send" class="send_btn">
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Footer section starts -->
+    <footer class="footer" id="footer">
+      <span class="footer_title">Nikhil Carpenter</span>
+      <p>Copyright @2022. All rights reserved</p>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+
+      let typed = new Typed('.auto-input', {
+        strings : ["web developer","javaScript developer","web designer"],
+        typeSpeed : 80,
+        backSpeed : 100,
+        loop:true
+      });
+
+
+      function changeTheme(){
+          let body = document.getElementById("body");
+          let toggleBtn = document.getElementById("toggle-btn");
+
+          if (body.classList.contains("change_theme")) {
+              body.classList.remove("change_theme");
+
+              
+          }else{
+            body.classList.add("change_theme");
+            
+          }
+
+        }
+
+
+        window.onscroll = function(){
+        
+        if (window.pageYOffset >=20) {
+
+         document.getElementById("header").style.backgroundColor = "#7d5fff";
+         document.getElementById("logo_part").style.color = "white";
+         document.getElementById("nav").style.color = "#7d5fff";
+         document.getElementById("header").style.height = "80px";
+         document.getElementById("header").style.boxShadow = "0 5px 10px rgba(0,0,0,0.4)";
+
+         
+     }else{
+      
+
+         document.getElementById("header").style.backgroundColor = "transparent";
+        //  document.getElementById("header").style.color = "#7d5fff";
+         document.getElementById("header").style.height = "90px";
+         document.getElementById("header").style.borderBottomColor = "transparent";
+
+        }
+      }
+
+
+
+
+    </script>
+
+    
+  </body>
+</html>
