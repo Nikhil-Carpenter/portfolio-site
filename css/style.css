@@ -261,7 +261,7 @@ html{
     border-radius: 10px;
     /* padding: 10px; */
 }
-.left::before{
+.about_content .left::before{
     content: '';
     position: absolute;
     inset: 0;
