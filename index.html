@@ -22,9 +22,10 @@
       <div class="container header_container">
         <div class="logo">
           <p><span id="logo_part">N.C.</span></p>
+          <i class="fa-solid fa-bars mobile" id="btn"></i>
         </div>
         <nav class="nav" id="nav">
-          <ul class="navlist">
+          <ul class="navlist" id="navlist">
             <li class="list_items"><a href="#home">Home</a></li>
             <li class="list_items"><a href="#about">About</a></li>
             <li class="list_items"><a href="#skill">Skills</a></li>
@@ -68,14 +69,14 @@
       <h1 class="section_heading">About Me</h1>
       <div class="about_content">
         <div class="left">
-          <img src="./media/imgs/profile-1.jpeg" alt="">
+          <img class="imgs"  src="./media/imgs/WhatsApp Image 2022-03-23 at 4.32.42 PM.jpeg" alt="">
         </div>
         <div class="right">
           <h2>I'm Nikhil and I'm a <span class="auto-input">Web Developer</span></h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae exercitationem mollitia voluptas nisi illo officia recusandae animi deserunt aliquam! Nulla quo quidem laudantium maiores laborum, nam, porro iusto obcaecati harum tempora commodi, dolorum voluptatem voluptatum ex modi architecto sit veniam itaque? Optio magni vitae corrupti autem, placeat fugit facere.
+          <p>I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you!
 
           </p>
-          <a>Contact Me</a>
+          <a href="#contact">Contact Me</a>
         </div>
       </div>
 
@@ -95,8 +96,9 @@
           <div class="column col_left">
             
             <h2 class="skill_content_heading">My Skills and Experiences</h2>
-            <p class="skill_content_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate modi consequatur rem! Atque consequatur est blanditiis perferendis totam! Maiores beatae voluptas, officiis soluta ab vero, facere minima modi, molestiae eligendi harum aliquam corrupti. Rem reprehenderit repudiandae sunt id beatae.
-
+            <p class="skill_content_para">As a developer I 
+              Write well designed, testable, efficient code by using best software development practices.
+              And Create website layout/user interfaces by using standard HTML/CSS practices.
             </p>
             <a href="#" class="btn">See More</a>
           </div>
@@ -174,7 +176,7 @@
             </div>
             <div class="work_about">
               <h3 class="work_heading">Travel Website</h3>
-              <p class="work_desc">this is filter system with CRUD operations</p>
+              <p class="work_desc">this is a full responsive travel website</p>
               <a target="blank" href="https://nikhil-carpenter.github.io/Indiana-website/">See project</a>
             </div>
           </div>
@@ -186,7 +188,7 @@
             </div>
             <div class="work_about">
               <h3 class="work_heading">Food Website</h3>
-              <p class="work_desc">this is filter system with CRUD operations</p>
+              <p class="work_desc">Responsive website</p>
               <a target="blank" href="https://nikhil-carpenter.github.io/Food-website/">See project</a>
             </div>
 
@@ -330,25 +332,43 @@
 
         }
 
+        let btn = document.getElementById("btn");
+        let menu = document.getElementById("navlist");
+
+        
+
+        let menuHeight = false;
+
+        btn.addEventListener("click",function(){
+
+            if(menuHeight === false){
+            menu.style.height = "420px";
+            btn.classList.remove("fa-bars");
+            btn.classList.add("fa-xmark");
+            menuHeight = true;
+            }else {
+                 menu.style.height = "0px";
+                btn.classList.add("fa-bars"); 
+                btn.classList.remove("fa-xmark");
+                menuHeight=false;
+            }
+        })   
+
+   
+
 
         window.onscroll = function(){
         
         if (window.pageYOffset >=20) {
 
          document.getElementById("header").style.backgroundColor = "#7d5fff";
-         document.getElementById("logo_part").style.color = "white";
-         document.getElementById("nav").style.color = "#7d5fff";
-         document.getElementById("header").style.height = "80px";
-         document.getElementById("header").style.boxShadow = "0 5px 10px rgba(0,0,0,0.4)";
+      
 
-         
      }else{
       
 
          document.getElementById("header").style.backgroundColor = "transparent";
-        //  document.getElementById("header").style.color = "#7d5fff";
-         document.getElementById("header").style.height = "90px";
-         document.getElementById("header").style.borderBottomColor = "transparent";
+       
 
         }
       }
