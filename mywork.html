@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Work</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        .header {
+            background-color:#7d5fff ;
+            position: relative
+            
+        }
+    </style>
+</head>
+<body id="body">
+    <header class="header" id="header" >
+        <div class="container header_container">
+          <div class="logo">
+            <p><span id="logo_part">N.C.</span></p>
+            <i class="fa-solid fa-bars mobile" id="btn"></i>
+          </div>
+          <nav class="nav" id="nav">
+            <ul class="navlist" id="navlist">
+              <li class="list_items"><a href="./index.html">Home</a></li>
+              <li class="list_items"><a href="#about">About</a></li>
+              <li class="list_items"><a href="#skill">Skills</a></li>
+              <li class="list_items"><a href="#">Services</a></li>
+              <li class="list_items"><a href="#work">Work</a></li>
+              <li class="list_items"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  
+
+      <section class="work_section" id="work">
+
+        <h2 class="section_heading">My Work</h2>
+
+        <div class="work_content">
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-information-data-collection-of-filter-concept-with-funnel-money-and-graph-png-image_5307948.jpg" alt="">
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Filter System</h3>
+              <p class="work_desc">this is filter system with CRUD operations</p>
+              <a target="blank" href="https://creative-eclair-ad1956.netlify.app/">See project</a>
+            </div>
+          </div>
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://www.qsstechnosoft.com/wp-content/uploads/2020/09/Travel-App-Development-1-1200x899.jpg" alt="">
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Travel Website</h3>
+              <p class="work_desc">this is a full responsive travel website</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/Indiana-website/">See project</a>
+            </div>
+          </div>
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://cdn.dribbble.com/users/554465/screenshots/14471510/media/2b2b3592fb6ec485ae57096f02c05b9e.png?compress=1&resize=400x300&vertical=top" alt="">
+
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Food Website</h3>
+              <p class="work_desc">Responsive website</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/Food-website/">See project</a>
+            </div>
+          </div>
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://clickup.com/blog/wp-content/uploads/2019/01/to-do-list-apps.png" alt="">
+
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">TO-DO-APP</h3>
+              <p class="work_desc">To do app with animation</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/to-do-list-js/">See project</a>
+            </div>
+          </div>
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://previews.123rf.com/images/robuart/robuart1511/robuart151100121/48231561-meteo-app-icona-del-design-piatto-stile-icona-del-tempo-previsioni-del-tempo-sole-e-nuvole-la-temper.jpg" alt="">
+
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Weather App</h3>
+              <p class="work_desc">Simple Weather App using Openweather API</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/weather-app/">See project</a>
+            </div>
+          </div>
+
+          <div class="work_card">
+            <div class="work_img">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0f172c70447265.5ba3ab9a81e28.jpg" alt="">
+
+            </div>
+            <div class="work_about">
+              <h3 class="work_heading">Restaurant Landing Page</h3>
+              <p class="work_desc">Landing page with BOOTSTRAP 5</p>
+              <a target="blank" href="https://nikhil-carpenter.github.io/bootstrap-website/">See project</a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <a href="./index.html" >Go Back</a>
+    </section>
+
+    <footer class="footer" id="footer">
+        <span class="footer_title">Nikhil Carpenter</span>
+        <p>Copyright @2022. All rights reserved</p>
+  
+  
+      </footer>
+  
+  
+  
+
+
+    <script>
+
+// window.onscroll = function() {
+//         if (pageYOffset>=20) {
+//           document.getElementById("header").classList.add("active");
+          
+//          }//else{
+//         //   document.getElementById("header").classList.remove("active");
+
+//         // }
+//       }
+
+
+      let toggleBtn = document.getElementById("btn");
+      flag = 0;
+      toggleBtn.addEventListener("click",function(){
+        document.getElementById("navlist").classList.toggle("active");
+        
+        if (flag===0) {
+          toggleBtn.classList.add("fa-xmark");
+          flag++;
+        }else{
+          toggleBtn.classList.remove("fa-xmark");
+          flag=0;
+        }
+   
+      })
+
+
+      let listItems = document.querySelectorAll(".list_items");
+          listItems.forEach(function(item){
+            item.addEventListener("click",function(){
+              document.getElementById("navlist").classList.toggle("active");
+              toggleBtn.classList.remove("fa-xmark");
+              flag=0;
+            })
+          })
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
