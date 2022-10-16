@@ -420,7 +420,7 @@ html{
     background-color: yellow;
 }
 .skill_content .col_right .bar .react:before{
-    width: 50%;
+    width: 70%;
     background-color: rgb(42, 167, 209);
 }
 .skill_content .col_right .bar .node:before{
